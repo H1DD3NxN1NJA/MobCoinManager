@@ -38,8 +38,7 @@ public class ShopEvent extends Event {
 	    return commands;
 	  }
 	  
-	  public HandlerList getHandlers()
-	  {
+	  public HandlerList getHandlers() {
 	    return handlers;
 	  }
 	  
