@@ -1,0 +1,190 @@
+#=================================================================================================#
+#                                    Mob Drops Configuration File
+#=================================================================================================#
+#
+#    If you need any plugin support, feel free to join our discord server
+#    or private message me H1DD3NxN1NJA on Spigot.
+#
+#    Discord Link: https://discord.gg/n9A9xtA
+#
+#=================================================================================================#
+#
+# Information:
+#   1. Mob List:
+#      - https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
+#
+#=================================================================================================#
+#
+# The available mobs that will drop mob coins. You can add or remove as many mobs as you like!
+# Do not TAB when adding a new mob, it may cause errors in console.
+# Error: Found character '\t(TAB)' that cannot start any token. (Do not use \t(TAB) for indentation)
+#
+#=================================================================================================#
+#
+# How to use:
+#   Mobs:
+#     <mob name> The mob players have to kill to receive mob coins.
+#       Chance: 0-100 The chance the mob has to drop mob coins.
+#       Drops: 0-infinate The amount of mob coins players will receive for killing the mob.
+#
+#=================================================================================================#
+Mobs:
+  BAT:
+    Chance: 100
+    Drops: 3
+  BLAZE:
+    Chance: 100
+    Drops: 3
+  CAVE_SPIDER:
+    Chance: 100
+    Drops: 3
+  CHICKEN:
+    Chance: 100
+    Drops: 3
+  COD:
+    Chance: 100
+    Drops: 3
+  COW:
+    Chance: 100
+    Drops: 3
+  CREEPER:
+    Chance: 100
+    Drops: 3
+  DOLPHIN:
+    Chance: 100
+    Drops: 3
+  DONKEY:
+    Chance: 100
+    Drops: 3
+  DROWNED:
+    Chance: 100
+    Drops: 3
+  ELDER_GUARDIAN:
+    Chance: 100
+    Drops: 3
+  ENDER_DRAGON:
+    Chance: 100
+    Drops: 3
+  ENDERMAN:
+    Chance: 100
+    Drops: 3
+  ENDERMITE:
+    Chance: 100
+    Drops: 3
+  GHAST:
+    Chance: 100
+    Drops: 3
+  GIANT:
+    Chance: 100
+    Drops: 3
+  GUARDIAN:
+    Chance: 100
+    Drops: 3
+  HORSE:
+    Chance: 100
+    Drops: 3
+  HUSK:
+    Chance: 100
+    Drops: 3
+  IRON_GOLEM:
+    Chance: 100
+    Drops: 3
+  LLAMA:
+    Chance: 100
+    Drops: 3
+  MAGMA_CUBE:
+    Chance: 100
+    Drops: 3
+  MULE:
+    Chance: 100
+    Drops: 3
+  MUSHROOM_COW:
+    Chance: 100
+    Drops: 3
+  OCELOT:
+    Chance: 100
+    Drops: 3
+  PARROT:
+    Chance: 100
+    Drops: 3
+  PHANTOM:
+    Chance: 100
+    Drops: 3
+  PIG:
+    Chance: 100
+    Drops: 3
+  PIG_ZOMBIE:
+    Chance: 100
+    Drops: 3
+  POLAR_BEAR:
+    Chance: 100
+    Drops: 3
+  PUFFERFISH:
+    Chance: 100
+    Drops: 3
+  RABBIT:
+    Chance: 100
+    Drops: 3
+  SALMON:
+    Chance: 100
+    Drops: 3
+  SHEEP:
+    Chance: 100
+    Drops: 3
+  SHULKER:
+    Chance: 100
+    Drops: 3
+  SILVERFISH:
+    Chance: 100
+    Drops: 3
+  SKELETON:
+    Chance: 100
+    Drops: 3
+  SKELETON_HORSE:
+    Chance: 100
+    Drops: 3
+  SLIME:
+    Chance: 100
+    Drops: 3
+  SNOWMAN:
+    Chance: 100
+    Drops: 3
+  SPIDER:
+    Chance: 100
+    Drops: 3
+  SQUID:
+    Chance: 100
+    Drops: 3
+  TROPICAL_FISH:
+    Chance: 100
+    Drops: 3
+  TURTLE:
+    Chance: 100
+    Drops: 3
+  VEX:
+    Chance: 100
+    Drops: 3
+  VILLAGER:
+    Chance: 100
+    Drops: 3
+  WITCH:
+    Chance: 100
+    Drops: 3
+  WITHER:
+    Chance: 100
+    Drops: 3
+  WITHER_SKELETON:
+    Chance: 100
+    Drops: 3
+  WOLF:
+    Chance: 100
+    Drops: 3
+  ZOMBIE:
+    Chance: 100
+    Drops: 3
+  ZOMBIE_HORSE:
+    Chance: 100
+    Drops: 3
+  ZOMBIE_VILLAGER:
+    Chance: 100
+    Drops: 3
