@@ -1,0 +1,130 @@
+#=================================================================================================#
+#                           Main Shop Configuration of Mob Coins Manager
+#=================================================================================================#
+#
+#    If you need any plugin support, feel free to join our discord server
+#    or private message me H1DD3NxN1NJA on Spigot.
+#
+#    Discord Link: https://discord.gg/n9A9xtA
+#
+#=================================================================================================#
+#
+# Information:
+#   1. ColorCode List
+#      - ColorCodes are supported with the "&" character.
+#      - https://bukkit.gamepedia.com/Help.yml
+#   
+#   2. Sound List
+#      - 1.9 and newer: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+#      - 1.8 and older: http://docs.codelanx.com/Bukkit/1.8/org/bukkit/Sound.html
+#
+#   3. Enchantments List:
+#      - https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/enchantments/Enchantment.html
+#
+#   4. Information:
+#      - Everything can be added/ removed.
+#      - What is required to have is Display_Name, Display_Item, Display_Amount, Lore, and Slot.
+#      - If you dont want the items section just cut it, it wont effect the plugin. 
+#      - If you want the item section but not the enchantments, you can cut that as well.
+#      - If you don't want a lore, set it as Lore: [].
+#      - If you don't want to set a permission, set it as Permission: "" or Permission none.
+#      - If you don't want a command, set it as Commands: [], or delete the section.
+#      - If you don't want a message, set it as Messages: []. or delete the section.
+#      - If your server is 1.13+ do NOT use ID Codes for items, you have to use the item name since ID codes
+#      no longer work on 1.13!!!
+#
+#=================================================================================================#
+Mob_Coins_Shop:
+  Options:
+    Title: "&8Mob Coins Shop" #The title of the GUI.
+    Size: 54 #The size of the GUI. It can only be set as 9, 18. 27, 36, 45, or 54, no higher than 54, no lower than 9.
+  Items:
+    1:
+      Display_Name: "&cPvping" #The name of the item shown in the GUI.
+      Display_Item: 'PAPER' #The item that is shown in the GUI. You can also add data numbers like 1:1.
+      Display_Amount: 1 #The amount of items that is displayed.
+      Lore: #The lore that will be shown on the item in the GUI.
+        - "&7Items:"
+        - "&d* &71 Diamond Sword"
+        - "&d* &71 Set of Diamond Armor"
+        - "&d* &75 Golden Apples"
+        - ""
+        - "&d&l* &7Price: &a10,000"
+      Price: 10000 #The price in mob coins to purchase the item.
+      Permission: paper.buy #The permission players need to purchase the item.
+      Slot: 0 #The slot the item is in.
+      Add_Glow: true #Add a glowing effect to the item.
+      #The commands that are executed when a player purchases the item.
+      Commands:
+        - "give {player} DIAMOND_SWORD 1 DAMAGE_ALL:2 DURABILITY:2"
+        - "give {player} GOLDEN_APPLE 5"
+      #The messages players will receive upon purchasing the item.
+      Messages:
+        - "&4&l(!) &7You have received one Diamond Sword, one set of Diamond Armor, and five Golden Apples!"
+      Items: #Physical items you want to give players.
+        Enable: true #Enable Items.
+        Items: #The Items you want to give the players.
+          1:
+            Material: DIAMOND_HELMET #The item you want to give to players.
+            Amount: 1 #How many you want to give the player.
+            Name: "&bCool Diamond Helmet" #The name of the item.
+            Lore: [] #The lore of the item.
+            Enchantments: #The enchantments you want on the item.
+              - DURABILITY:3
+              - PROTECTION_ENVIRONMENTAL:3
+          2:
+            Material: DIAMOND_CHESTPLATE
+            Amount: 1
+            Name: "&bCool Diamond Chestplate"
+            Lore: []
+            Enchantments:
+              - DURABILITY:3
+              - PROTECTION_ENVIRONMENTAL:3
+          3:
+            Material: DIAMOND_LEGGINGS
+            Amount: 1
+            Name: "&bCool Diamond Leggings"
+            Lore: []
+            Enchantments:
+              - DURABILITY:3
+              - PROTECTION_ENVIRONMENTAL:3
+          4:
+            Material: DIAMOND_BOOTS
+            Amount: 1
+            Name: "&bCool Diamond Boots"
+            Lore: []
+            Enchantments:
+              - DURABILITY:3
+              - PROTECTION_ENVIRONMENTAL:3
+    2:
+      Display_Name: "&cFood"
+      Display_Item: 'APPLE'
+      Display_Amount: 1
+      Lore:
+        - "&7Items:"
+        - "&d* &716 Apple"
+        - "&d* &716 Bread"
+        - "&d* &716 Steak"
+        - ""
+        - "&d&l* &7Price: &a1,000"
+      Price: 1000
+      Permission: none
+      Slot: 1
+      Add_Glow: true
+      Commands:
+        - "give {player} APPLE 16"
+        - "give {player} BREAD 16"
+        - "give {player} COOKED_BEEF 16"
+      Messages:
+        - "&4&l(!) &7You have received 16 apples, 16 bread, and 16 cooked beef!"
+    3:
+      Display_Name: "&dInformation"
+      Display_Item: 'BOOK'
+      Display_Amount: 1
+      Lore:
+        - "&d* &7Available Mob Coins: &6{coins}"
+        - ""
+        - "&d* &7How to receive mob coins:"
+        - "&d* &7Killing Mobs"
+      Slot: 49
+      Add_Glow: true
