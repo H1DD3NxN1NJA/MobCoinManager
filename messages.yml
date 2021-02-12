@@ -1,0 +1,86 @@
+#=================================================================================================#
+#                              Main Messages File of Mob Coins Manager
+#=================================================================================================#
+#
+#    If you need any plugin support, feel free to join our discord server
+#    or private message me H1DD3NxN1NJA on Spigot.
+#
+#    Discord Link: https://discord.gg/n9A9xtA
+#
+#=================================================================================================#
+#
+# Information:
+#
+#   Color Codes are supported with the "&" character.
+#
+#=================================================================================================#
+Messages:
+  Prefix: "&b[&6MobCoinManager&b]&r"
+  No_Permission: "{prefix} &cYou don't have the permissions to do this."
+  Player_Not_Found: "{prefix} &7The player &c{target} &7cannot be found."
+  Reload: "{prefix} &7Config has been reloaded."
+  Invalid_Integer: "{prefix} &7You didn't enter a valid number."
+  Full_Inventory: "{prefix} &7You must have inventory space to withdraw coins."
+#=================================================================================================#
+# Messages you will receive when using the mob coin shop.
+#=================================================================================================#
+Mob_Coins_Shop:
+  Open_Shop: "{prefix} &7Opening mob coins shop."
+  Incorrect_Balance: "{prefix} &7You do not have enough mob coins for this item."
+  Successful_Purchase: "{prefix} &7You have successfully bought this item for &c{price} &7mob coins."
+#=================================================================================================#
+# Messages you and the player will receive when you give a player mob coins.
+#=================================================================================================#
+Give_Mob_Coins:
+  Give_Message: "{prefix} &7You have given &c{player} {amount} &7mob coins."
+  Receive_Message: "{prefix} &7You have been given &c{amount} &7mob coins."
+#=================================================================================================#
+# Messages you and the player will receive when you set a players mob coins to a certain amount.
+#=================================================================================================#
+Set_Mob_Coins:
+  Set_Staff_Message: "{prefix} &7You set &c{player}'s &7mob coins amount to &c{amount}&7."
+  Set_Player_Message: "{prefix} &7Your mob coins amount has been set to &c{amount}&7."
+#=================================================================================================#
+# Messages you and the player will receive when you remove a players mob coins.
+#=================================================================================================#
+Remove_Mob_Coins:
+  Remove_Staff_Message: "{prefix} &7You removed &c{amount} &7mob coins from &c{player}&7."
+  Remove_Player_Message: "{prefix} &c{amount} &7mob coins have been removed from your account."
+#=================================================================================================#
+# Messages you and the player will receive when you reset a players mob coins.
+#=================================================================================================#
+Reset_Mob_Coins:
+  Reset_Staff_Message: "{prefix} &7You have reset &c{player}'s &7mob coins."
+  Reset_Player_Message: "{prefix} &7Your mob coins has been reset."
+#=================================================================================================#
+# Messages players will receive when receiving and redeeming a mob coin.
+#=================================================================================================#
+Mob_Coin:
+  Received: "{prefix} &7You have received &c{amount} &7mob coins."
+  Redeemed: "{prefix} &7You have redeemed &c{amount} &7mob coins."
+#=================================================================================================#
+# Messages players will receive when withdrawing mob coins.
+#=================================================================================================# 
+Withdraw_Mob_Coins:
+  Withdraw_Success: "{prefix} &7You have successfully withdrawn &c{amount} &7mob coins."
+  Not_Enough: "{prefix} &cYou don't have enough mobcoins to withdraw that much."
+#=================================================================================================#
+# Messages players will receive when they do anything with a mob coin pouch.
+#=================================================================================================#
+Mob_Coin_Pouch:
+  Give_Message: "{prefix} &7You have given &c{target} {amount}x {category} &7mob coin pouches."
+  Receive_Message: "{prefix} &7You have been given &c{amount}x {category} &7mob coin pouches."
+  Inventory_Full: "{prefix} &7Your inventory is full. The pouch dropped on the floor."
+  Doesnt_Exist: "{prefix} &7The mob coin pouch {category} doesn't exist."
+  Received: "{prefix} &7You have received &c{amount} &7{category} mob coin pouch."
+  Redeem: "{prefix} &7You have redeemed &c{amount} &7mob coins from your mob coin pouch!"
+#=================================================================================================#
+# Messages players will receive when you viewing another players mob coin balance, or your balance.
+#=================================================================================================#
+View_Coins:
+  Player_Balance:
+    - "&7Your Mob Coins: &c{amount}"
+    - "&7Use &c/transfer &7to purchase items with your mob coins."
+  Other_Balance:
+    - "&7{player}'s Mob Coins: &c{amount}"
+    - "&7Use &c/transfer &7to purchase items with your mob coins."
