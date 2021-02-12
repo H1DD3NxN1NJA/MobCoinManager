@@ -13,7 +13,7 @@ public class RedeemCoinEvent extends Event {
 	public RedeemCoinEvent(Player player, int amount) {
 	    this.player = player;
 	    this.amount = amount;
-	  }
+	}
 
 	public Player getPlayer() {
 		return player;
