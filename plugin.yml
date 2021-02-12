@@ -1,0 +1,54 @@
+name: MobCoinManager
+version: 1.0.0
+main: me.h1dd3nxn1nja.mobcoinmanager.Main
+author: H1DD3NxN1NJA
+description: Mob Coin Manager
+softdepend: [PlaceholderAPI]
+api-version: 1.13
+
+commands:
+    MobCoins:
+        description: Main command for the plugin Mob Coin Manager.
+        usage: /<command> [Help|Balance|View|Withdraw|Shop]
+        aliases: [mcm,mobcoinmanager]
+    MobAdmin:
+        description: Main admin command for the plugin Mob Coin Manager.
+        usage: /<command> [Help|Reload|Give|Set|Reset|Remove|Pouch]
+    Transfer:
+        description: Mob coin shop
+        usage: /<command>
+        
+permissions:
+    mobcoinmanager.view:
+        description: Permission to view players mob coins.
+        default: op
+    mobcoinmanager.withdraw:
+        description: Permission to withdraw mob coins from your account.
+        default: op
+    mobcoinmanager.shop:
+        description: Permission to open the mob coin shop.
+        default: op
+    mobcoinmanager.admin:
+        description: Admin permission for mob coin manager.
+        default: op
+    mobcoinmanager.admin.reload:
+        description: Permission to reload the configuration files.
+        default: op
+    mobcoinmanager.admin.give:
+        description: Permission to give mob coins to a players account.
+        default: op
+    mobcoinmanager.admin.set:
+        description: Permission to set a players mob coin amount to a specific amount. 
+        default: op
+    mobcoinmanager.admin.reset:
+        description: Permission to reset players mob coins.
+        default: op
+    mobcoinmanager.admin.remove:
+        description: Permission to remove mob coins from a players account.
+        default: op
+    mobcoinmanager.admin.pouch:
+        description: Permission to give mob coin pouch's
+        default: op
+    mobcoinmanager.mobcoin.shift:
+        description: Permission to shift + right click mob coins.
+        default: op
