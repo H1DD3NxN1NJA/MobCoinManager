@@ -1,0 +1,154 @@
+#=================================================================================================#
+#                             Main Configuration of Mob Coin Manager
+#=================================================================================================#
+#
+#    If you need any plugin support, feel free to join our discord server
+#    or private message me H1DD3NxN1NJA on Spigot.
+#
+#    Discord Link: https://discord.gg/n9A9xtA
+#
+#=================================================================================================#
+#
+# Information:
+#   1. Color Codes are supported with the "&" character.
+#   
+#   2. Sound List:
+#      - 1.9 and newer: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+#      - 1.8 and older: http://docs.codelanx.com/Bukkit/1.8/org/bukkit/Sound.html
+#   3. Mob List:
+#      - https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
+#
+#=================================================================================================#
+
+#=================================================================================================#
+# Mob Coin Managers Options.
+#=================================================================================================#
+Options:
+
+  #How the coins should be formatted.
+  Decimal_Format: "#,###"
+  
+  #Should killing mobs drop a physical coin? 
+  #If set to false, the mob coin amount will be added to the players balance.
+  Drop_Physical_Coin: true
+  
+  #Should killing mobs drop a physical pouch?
+  #If set to false, the mob coin pouch will be added to the players inventory.
+  Drop_Physical_Pouch: true
+  
+  #This will send a player either a MESSAGE or an ACTIONBAR message when they receive mob coins.
+  #This is for the Mob_Coin.Received message in the messages.yml file.
+  #If its set to ACTIONBAR it will prevent spam in chat, only works on 1.8.8 servers and up.
+  Mob_Coins_Receive_Message: MESSAGE
+  
+  #Disabled worlds where mob coins and pouches won't drop.
+  Disabled_Worlds:
+    - "world1"
+    - "world2"
+    
+  #Death reasons that won't drop mob coins or pouches.
+  #List of bukkit names for death reasons can be found at... 
+  # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityDamageEvent.DamageCause.html
+  Damage_Blacklist:
+    - "FALL"
+    - "FIRE"
+  
+  #The max radius of which a player has to be from a mob to drop mob coins and pouches.
+  #If Drop_Physical_Coin/Pouch is set to false no one will receive mob coins or pouches.
+  #Radius is in blocks.
+  Mob_Radius:
+  
+    Enable: false
+    
+    Radius: 100
+  
+#=================================================================================================#
+# Item Tag Options
+# The item tag will show ontop of the dropped mob coin or mob pouch.
+#=================================================================================================#
+Item_Tag:
+
+  Enable: true
+  
+  Mob_Coin_Tag: "&7x{count} {item_name}"
+  
+  Mob_Pouch_Tag: "&7x{count} {item_name}"
+  
+#=================================================================================================#
+# Sounds that are played when a player performs an action.
+# To enable sounds, format it like this... Section: <SOUND>
+# To disable sounds, format it like this... Section: ''
+# Sounds are disabled by default due to the different sound names on 1.8- and 1.9+, 
+# its to prevent errors in console.
+#=================================================================================================#
+Sounds:
+  Mob_Coin_Received: ''
+  Mob_Coin_Redeemed: ''
+  Mob_Coin_Shop_Opened: ''
+  Mob_Coin_Shop_Purchase: ''
+  Pouch_Received: ''
+  Pouch_Redeemed: ''
+  
+#=================================================================================================#
+# Mob Coins Pouch. The pouch is an item that can either be received by an admin via command or
+# by killing mobs.
+# WARNING: If you enable Drop when killing mobs make sure to lower the chances since players can
+# receive a lot of mob coins really fast if they have mob grinders. I recommend using the pouches
+# for crates or rewards for events, but its up to you.
+#=================================================================================================#
+Mob_Coin_Pouch:
+
+  #Should the mob coin pouch drop when killing mobs?
+  Drop: false
+  
+  #Mob coin pouch tiers, each rarity can either give more or less mob coins, its up to you. 
+  #You can add as many tiers as you like.
+  Tiers:
+    Common: #The name of the mob coin pouch tier. You can add as many or as little as you like.
+      Drop_Chance: 25 #The chance the mob has to drop the pouch.
+      Minimum: 100 #The minumum amount of mob coins a player can receive.
+      Maximum: 1000 #The maximum amount of mob coins a player can receive.
+    Uncommon:
+      Drop_Chance: 10
+      Minimum: 1000
+      Maximum: 10000
+    Rare:
+      Drop_Chance: 5
+      Minimum: 10000
+      Maximum: 100000
+    Legendary:
+      Drop_Chance: 1
+      Minimum: 100000
+      Maximum: 1000000
+
+#=================================================================================================#
+# The Item you want the mob coin and mob coin pouch to be.
+#=================================================================================================#  
+Items:
+  Coin:
+    Material: EMERALD
+    Name: "&e&l{amount} Mob Coin(s) &7&o(Right Click)"
+    Add_Glow: false
+    Lore:
+    - "&7You can use these in /transfer menu to"
+    - "&7purchase items!"
+    - ""
+    - " &d&l* &7Amount: &e{amount}"
+  Pouch:
+    Material: ENDER_CHEST
+    Name: "&e&l{category} Mob Coin Pouch &7&o(Right Click)"
+    Add_Glow: false
+    Lore:
+    - "&7Right-Click in hand to receive"
+    - "&7a random amount of Mob Coins!"
+    - ""
+    - "&d&l* &e{min}-{max} Mob Coins"
+  
+#=================================================================================================#
+# Checks if there is an available update for mob coin manager.
+#=================================================================================================#
+Update_Checker: true
+
+#=================================================================================================#
+# You're all done with the config!
+#=================================================================================================#
